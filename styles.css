@@ -1,63 +1,95 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base */
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #fdf8f3;
-    color: #3e3e3e;
-    line-height: 1.7;
+    background-color: #fff3e6; /* light orange background */
+    color: #3a3a3a;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-header {
-    background: #c97b63;
-    color: white;
+/* NAVIGATION */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #ffffffcc;
+    backdrop-filter: blur(8px);
+    padding: 12px;
     text-align: center;
+    border-bottom: 1px solid #f0d6c2;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #c46a3a;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #8b3f1f;
+}
+
+/* SECTIONS */
+.section {
     padding: 60px 20px;
 }
 
-h1 {
-    font-family: 'Lora', serif;
-    font-size: 42px;
-    margin-bottom: 10px;
+/* BOX STYLE */
+.box {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-.subtitle {
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-h2 {
-    font-family: 'Lora', serif;
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #c97b63;
-}
-
-h3 {
-    margin-bottom: 5px;
-}
-
-.section {
-    padding: 20px 0;
-}
-
-.section.alt {
-    background-color: #f4eae3;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-footer {
-    background: #3e3e3e;
-    color: white;
+/* HERO */
+.hero {
     text-align: center;
-    padding: 30px 20px;
-    font-size: 14px;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #c46a3a;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #c46a3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8b3f1f;
+}
+
+/* HEADINGS */
+h2 {
+    color: #c46a3a;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
 }
