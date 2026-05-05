@@ -151,3 +151,8 @@ footer {
         text-align: center;
     }
 }
+.university {
+    display: block;
+    margin-top: 6px;
+    font-weight: 500;
+}
